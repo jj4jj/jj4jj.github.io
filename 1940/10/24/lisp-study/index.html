@@ -21,7 +21,18 @@
   <title>Tkf</title>
   <meta name="author" content="snak67">
   
-  <meta name="description" content="博客重开&amp;emsp;&amp;emsp;之前在BudgetVM买的VPS过期后 ， 假设于之上的 wordpress 博客 thinkingforever.com 上的数据也没有备份，然后那几十篇小短文就这么 销毁了， 后来重买了VPS , 懒得再部署那么一套东西，反正也没有之前的数据可以导入 ， 登录VP">
+  <meta name="description" content="语言 抽象 机制  的 语义 表达能力抽象原则   What 与 How ？
+概念 &amp;lt;- 接口 
+实现 &amp;lt;- 机制    
+解耦 &amp;lt;- 分层
+表达What过程
+类
+接口
+函数          
+问题
+借用太多机制元素 ，可能本末倒置，南辕北辙，忘了最初的目标 。 
+
+语法 与 语">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -144,17 +155,26 @@ alert("Please Update Your IE \n请升级您的IE浏览器");
     </header>
     <div class="entry depth">
       
-        <h1 id="博客重开">博客重开</h1><p>&emsp;&emsp;之前在BudgetVM买的VPS过期后 ， 假设于之上的 wordpress 博客 thinkingforever.com 上的数据也没有备份，然后那几十篇小短文就这么 销毁了， 后来重买了VPS , 懒得再部署那么一套东西，反正也没有之前的数据可以导入 ， 登录VPS实在比较慢（位于洛杉矶机房）， 卡拉巴基的搞了几下一点儿耐心都没了，只是部署了个Shadow socks 用于爬墙 .<br></p>
-<p>&emsp;&emsp;周末在github上瞎搞了下， 制造了一些 work “装饰” ; github 支持个人主页， 似乎有300MB 静态空间， 弄个静态博客装逼蛮适合的 , 好吧， 早有人搞了这些 , <a href="https://github.com/tommy351/hexo" title="hexo" target="_blank" rel="external">Hexo</a> 是个静态博客框架 ，用nodejs 搞的这一套 (一直没特别关注过node社区/[也许叫web前端社区]， 现在这个社区似乎强大到爆炸, 各种Web工具铺天盖地 .); Hexo 使用教程以及主题网山很多. <br></p>
-<p>Hexo的工作流很简单 , <code>npm install -g hexo</code> 后: <br></p>
-<ol>
-<li>执行命令 hexo init {path} 可以在本地创建博客项目 , 在{path} 目录下 <code>npm install</code> 添加node模块 , 然后编辑_config.yaml 设置自己的博客参数 ，也可以在网上找几套喜欢的主题换换装 .</li>
-<li>然后使用 hexo new {post} 新建 博文 , 博文可以使用markdown编写 .</li>
-<li>命令hexo server 在localhost:4000开启一个webserver， 可以本地预览，调整 .</li>
-<li>最后使用hexo deploy可发布到github , 在github.io 就可以看到页面了.</li>
-</ol>
-<p>&emsp;&emsp;这是第一篇 日志 , 后续把Evernote 的笔记可以搬过来~ 。</p>
-
+        <h1 id="语言_抽象_机制_的_语义_表达能力">语言 抽象 机制  的 语义 表达能力</h1><h2 id="抽象原则">抽象原则</h2><p>   What 与 How ？</p>
+<pre><code>概念 &lt;- 接口 
+实现 &lt;- 机制    
+解耦 &lt;- 分层
+</code></pre><h2 id="表达What">表达What</h2><pre><code>过程
+类
+接口
+函数          
+</code></pre><h2 id="问题">问题</h2><ul>
+<li><p>借用太多机制元素 ，可能本末倒置，南辕北辙，忘了最初的目标 。 </p>
+</li>
+<li><p>语法 与 语义 紧耦合</p>
+</li>
+</ul>
+<h2 id="Lisp">Lisp</h2><p>语法 与 语义 解耦</p>
+<pre><code><span class="title">S</span> 表达式 只有最简单的语法 没有语义 ， 语义由自己定义， DSL ?
+面向语言编程 ？
+</code></pre><p>Lisp 自解释</p>
+<pre><code><span class="title">Lisp</span> 宏
+</code></pre>
       
     </div>
     <footer>
